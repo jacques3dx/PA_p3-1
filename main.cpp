@@ -20,15 +20,15 @@ int main(){
     cout<<"A Req em série é: "<<RinSeries<<"Ω"<<endl;
 
     ///Calculo de Req em paralelo
-    float RinParalel= circuito.CalcRinParalel();           
-    cout<<"A Req em paralelo é: "<<RinParalel<<"Ω"<<endl;
+    float RinParalell= circuito.CalcRinParalell();           
+    cout<<"A Req em paralelo é: "<<RinParalell<<"Ω"<<endl;
 
     ///Calculo de i com Req em série
     circuito.i = circuito.CalcITotal(RinSeries);
     cout<<"A corrente i com resistências em série é: "<<circuito.i<<"A"<<endl;
     
     ///Calculo de i com Req em Paralelo
-    circuito.i = circuito.CalcITotal(RinParalel);
+    circuito.i = circuito.CalcITotal(RinParalell);
     cout<<"A corrente i com resistências em Paralelo é: "<<circuito.i<<"A"<<endl;
 
     ///Calculo da potência com R em serie
@@ -36,7 +36,7 @@ int main(){
     cout<<"A potência com resistências em séire é: "<<power<<"W"<<endl;
 
     ///Calculo da potência com R em paralelo
-    power = circuito.PowerCalc(RinParalel);
+    power = circuito.PowerCalc(RinParalell);
     cout<<"A potência com resistências em paralelo é: "<<power<<"W"<<endl;
 
 }

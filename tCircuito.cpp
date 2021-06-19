@@ -9,7 +9,7 @@ struct tCircuito
     }
     /////Calculo Resistencia em 
     ///paralelo
-    float CalcRinParalel(){
+    float CalcRinParalell(){
         return R1*R2/(R1+R2);
     }
     /////Calculo i total
